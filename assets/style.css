@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'helvetica';}
+   
+.container {
+  
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    width: 100%;
+    
+   
+  }
+ #header{
+    
+    max-height: 600px;
+   
+	width: 100%;
+ }
+ .title{
+    padding-top: 10px;
+color: black;
+text-align: center;
+justify-content: center;
+ }
+ .background{
+
+flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 659px;
+
+    max-width: 641px;
+    background:url('../assets/1.jpg')no-repeat;
+    background-size:cover;
+  background-position:top center;
+ }
+ .chat-area{
+   
+
+    padding: 20px;
+    text-align: top center;
+    align-items: top center;
+    flex-basis: 50%;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+
+ }
+ .main{
+    display: flex;
+    flex-direction: row;
+    min-height: 620px;
+   
+ }
+ .text-area{
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+  padding:4px;
+  width: 287px;
+  height: 57px;
+  border-radius: 10px;
+  position: relative;
+  
+}
+input::placeholder{
+  font-size: medium;
+  color: grey;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 7px;
+}
+p{
+  width: 300px;
+  height: 200px;
+  color: red;
+  padding: 7px;
+  font-size: 1.6rem;
+    margin-top: 30px;
+}
+@media only screen and  (min-width: 320px) and (max-width:1035px)
+{
+  .main{
+    flex-wrap: wrap;
+    padding: 10px;
+    
+  }
+  .background{
+    min-width: 500px;
+  }
+}
